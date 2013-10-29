@@ -1,0 +1,12 @@
+keycode 12 = 3 periodcentered 3 periodcentered numbersign dead_currency numbersign dead_currency
+keycode 13 = 4 dollar 4 dollar dead_tilde dollar dead_tilde dollar
+keycode 24 = q Q q Q at dead_greek at dead_greek
+keycode 28 = t T t T thorn THORN thorn THORN
+keycode 33 = p P p P dead_belowcomma dead_ogonek dead_belowcomma dead_ogonek
+keycode 46 = l L l L dead_stroke dead_stroke dead_stroke dead_stroke
+keycode 47 = ntilde Ntilde ntilde Ntilde dead_ogonek dead_doubleacute dead_ogonek dead_doubleacute
+keycode 48 = dead_acute dead_diaeresis dead_acute dead_diaeresis braceleft dead_caron braceleft dead_caron
+keycode 57 = n N n N doublelowquotemark singlelowquotemark doublelowquotemark singlelowquotemark
+keycode 59 = comma semicolon comma semicolon dead_cedilla multiply dead_cedilla multiply
+keycode 65 = space NoSymbol space space nobreakspace U202F
+keycode 135 = Menu Multi_key Menu Multi_key Menu
