@@ -9,4 +9,3 @@ keycode 48 = dead_acute dead_diaeresis dead_acute dead_diaeresis braceleft dead_
 keycode 57 = n N n N doublelowquotemark singlelowquotemark doublelowquotemark singlelowquotemark
 keycode 59 = comma semicolon comma semicolon dead_cedilla multiply dead_cedilla multiply
 keycode 65 = space NoSymbol space space nobreakspace U202F
-keycode 135 = Menu Multi_key Menu Multi_key Menu
