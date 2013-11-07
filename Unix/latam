@@ -66,3 +66,97 @@ xkb_symbols "deadtilde" {
 
     key <AD12>	{ [      plus,   asterisk,   dead_tilde,  dead_macron ]	};
 };
+
+// Bépo : Improved ergonomic french keymap using Dvorak method.
+// Built by community on 'Dvorak Fr / Bépo' :
+// see http://www.clavier-dvorak.org/wiki/ to join and help.
+// XOrg integration (1.0rc2 version) in 2008
+// by Frédéric Boiteux <fboiteux at free dot fr>
+//
+// Bépo layout (1.0rc2 version) for a pc105 keyboard (french) :
+// ┌────┐
+// │ S A│   S = Shift,  A = AltGr + Shift
+// │ s a│   s = normal, a = AltGr
+// └────┘
+//Mover los acentos de la J, incluir Ĳ, Ʒ, §, ¼, ¾, ‰, ∞, reordenar acentos URGENTE
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
+// │ °   │ !   │ " ⅛ │ · ¤ │ $   │ % ⅜ │ & ⅝ │ / ⅞ │ ( ™ │ ) ± │ = ° │ ?   │ ¡ ˛ ┃          ┃
+// │ | ¬ │ 1 | │ 2 @ │ 3 ¼ │ 4 ~ │ 5 ½ │ 6 ¬ │ 7   │ 8   │ 9   │ 0   │ ' \ │ ¿ ¸ ┃ ⌫        ┃
+// ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
+// ┃        ┃ Q µ │ W Ə │ E ¢ │ R ® │ T Þ │ Y — │ U ↑ │ I – │ O Œ │ P   ̛│ ¨ ° │ * ¯ ┃       ┃
+// ┃ Tab ↹  ┃ q @ │ w ə │ e € │ r ¶ │ t þ │ y ← │ u ↓ │ i → │ o œ │ p   ̉│ ´   │ + ~ ┃       ┃
+// ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
+// ┃ Bloq.   ┃ A Æ │ S ſ │ D Ð │ F ª │ G Ŋ │ H   │ J Ĳ │ K   │ L   │ Ñ ˝ │ [ ˇ │ ] ˘ ┃      ┃
+// ┃ Mayús.⇬ ┃ a æ │ s ß │ d ð │ f   │ g ŋ │ h   │ j ĳ │ k ĸ │ l   │ ñ / │ { ^ │ } ` ┃      ┃
+// ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
+// ┃ May. ┃ > ¦ │ Z   │ X   │ C © │ V ‘ │ B ’ │ N ‚ │ M º │ ; × │ : ÷ │ _ ˙ ┃               ┃
+// ┃ ⇧    ┃ < | │ z « │ x » │ c ¢ │ v “ │ b ” │ n „ │ m µ │ , , │ .   │ -  ̣ ┃ ⇧ Mayúsculas  ┃
+// ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
+// ┃       ┃       ┃       ┃ ␣       Espacio fijo angosto ⍽ ┃       ┃       ┃       ┃       ┃
+// ┃ Ctrl  ┃ Super ┃ Alt   ┃ ␣ Espacio       Espacio fijo ⍽ ┃ AltGr ┃ Super ┃ Menu  ┃ Ctrl  ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
+partial alphanumeric_keys
+xkb_symbols "telu" {
+    include "latam(basic)"
+    name[Group1]= "Spanish (Latin American, TELU)";
+
+    // First row
+    key <TLDE>	{ [       bar,     degree,      notsign ]	}; // | ° ¬
+    key <AE01>	{ [         1,     exclam,          bar ]	}; // 1 ! |
+    key <AE02>	{ [         2,   quotedbl,           at,    oneeighth ]	}; // 2 " @ ⅛
+    key <AE03>	{ [      3, numbersign, periodcentered, dead_currency ]	}; // 3 # · ¤
+    key <AE04>	{ [         4, dollarsign, dead_tilde  ]	}; // 4 $ ~
+    key <AE05>	{ [         5,    percent,      onehalf,  threeighths ]	}; // 5 % ½ ⅜
+    key <AE06>	{ [         6,  ampersand,      notsign,  fiveeighths ]	}; // 6 & ¬ ⅝
+    key <AE07>	{ [         7,      slash,    onefourth, seveneighths ]	}; // 7 / ¼ ⅞
+    key <AE08>	{ [         8,  parenleft, threefourths,    trademark ]	}; // 8 ( ¾ ™
+    key <AE09>	{ [         9, parenright,      section,    plusminus ]	}; // / 9 ) § ±
+    key <AE10>	{ [         0, equal, NoSymbol, degree ]	}; // 0 =  °
+    key <AE11>	{ [apostrophe,   question,    backslash ]	}; // ' ? \*
+    key <AE12>	{ [questiondown, exclamdown, dead_cedilla, dead_ogonek]	}; // ¿ ¡ ¸ ˛
+
+    // Second row
+    key <AD01>	{ [         q,          Q,           at,   dead_greek ]	}; // q Q @ µ
+    key <AD02>	{ [         w,          W,        schwa,        SCHWA ]	}; // w W ə Ə
+    key <AD03>	{ [         e,          E,     EuroSign,         cent ]	}; // e E € ¢
+    key <AD04>	{ [         r,          R,    paragraph,   registered ]	}; // r R ¶ ®
+    key <AD05>	{ [         t,          T,        thorn,        THORN ]	}; // t T þ Þ
+    key <AD06>	{ [         y,          Y,    leftarrow,       emdash ]	}; // y Y ← —
+    key <AD07>	{ [         u,          U,    downarrow,      uparrow ]	}; // u U ↓ ↑
+    key <AD08>	{ [         i,          I,   rightarrow,       endash ]	}; // i I → –
+    key <AD09>	{ [         o,          O,           oe,           OE ]	}; // o O œ Œ
+    key <AD10>	{ [         p,          P,    dead_hook,    dead_horn ]	}; // p P  ̉  ̛
+    key <AD11>	{ [dead_acute, dead_diaeresis, NoSymbol, dead_abovering ] }; // ´ ¨  °
+    key <AD12>	{ [      plus,   asterisk,   asciitilde,  dead_macron ]	}; // + * ~ ¯
+
+    // Third row
+    key <AC01>	{ [         a,          A,           ae,           AE ]	}; // a A æ Æ
+    key <AC02>	{ [         s,          S,       ssharp,        U017F ]	}; // s S ß ſ
+    key <AC03>	{ [         d,          D,          eth,          ETH ]	}; // d D ð Ð
+    key <AC04>	{ [         f,       F, NoSymbol, ordfeminine ]	}; // f F  ª
+    key <AC05>	{ [         g,          G,          eng,          ENG ]	}; // g G ŋ Ŋ
+    key <AC06>	{ [         h,          H              ]	}; // h H
+    key <AC07>	{ [         j,          J,           ij,           IJ ]	}; // j J ĳ Ĳ
+    key <AC08>	{ [         k,          K,         kra ]	}; // k K ĸ
+    key <AC09>	{ [         l,          L      ]	}; // l L
+    key <AC10>	{ [    ntilde,  Ntilde, dead_stroke, dead_doubleacute ]	}; // ñ Ñ / ˝
+    key <AC11>	{ [braceleft, bracketleft, dead_circumflex, dead_caron ] }; // { [ ^ ˇ
+    key <BKSL>	{ [braceright, bracketright, dead_grave,   dead_breve ]	}; // } ] ` ˘
+
+    // Fourth row
+    key <LSGT>	{ [      less,    greater,     NoSymbol,    brokenbar ]	}; // < > | ¦
+    key <AB01>	{ [         z,          Z, guillemotleft  ]	}; // z Z «
+    key <AB02>	{ [         x,          X, guillemotright ]	}; // x X »
+    key <AB03>	{ [         c,          C,         cent,    copyright ]	}; // c C ¢ ©
+    key <AB04>	{ [ v,  V,  leftdoublequotemark,  leftsinglequotemark ]	}; // v V “ ‘
+    key <AB05>	{ [ b,  B, rightdoublequotemark, rightsinglequotemark ]	}; // b B ” ’
+    key <AB06>	{ [ n,  N,   doublelowquotemark,   singlelowquotemark ]	}; // n N „ ‚
+    key <AB07>	{ [         m,          M,          mu,     masculine ]	}; // m M µ º
+    key <AB08>	{ [     comma,  semicolon, dead_belowcomma,  multiply ]	}; // , ; ¸ ×
+    key <AB09>	{ [    period,      colon,        NoSymbol,  division ]	}; // . : · ÷
+    key <AB10>	{ [   minus, underscore, dead_belowdot, dead_abovedot ]	}; // - _  ̣ ˙
+
+    key <SPCE>	{ [     space, space, nobreakspace, U202F ] }; // ␣ ␣ (espacio fijo) (espacio fijo delgado)
+    
+    include "level3(ralt_switch)"
+};
