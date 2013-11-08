@@ -216,21 +216,18 @@ xkb_symbols "olpc2" {
     include "level3(ralt_switch)"
 };
 
-// Bépo : Improved ergonomic french keymap using Dvorak method.
-// Built by community on 'Dvorak Fr / Bépo' :
-// see http://www.clavier-dvorak.org/wiki/ to join and help.
-// XOrg integration (1.0rc2 version) in 2008
-// by Frédéric Boiteux <fboiteux at free dot fr>
+// TELU: Teclado Español y Latinoamericano Universal.
+// Built by Fibonacci Prower.
+// https://github.com/FibonacciPrower/TELU/
 //
-// Bépo layout (1.0rc2 version) for a pc105 keyboard (french) :
+// TELU Spanish layout:
 // ┌────┐
 // │ S A│   S = Shift,  A = AltGr + Shift
 // │ s a│   s = normal, a = AltGr
 // └────┘
-//Mover los acentos de la J, incluir Ĳ, Ʒ, §, ¼, ¾, ‰, ∞, reordenar acentos URGENTE
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
 // │ ª   │ !   │ " ⅛ │ · ¤ │ $   │ % ⅜ │ & ⅝ │ / ⅞ │ ( ™ │ ) ± │ = ° │ ?   │ ¿ ˛ ┃          ┃
-// │ º \ │ 1 | │ 2 @ │ 3 ¼ │ 4 ~ │ 5 ½ │ 6 ¬ │ 7   │ 8   │ 9   │ 0   │ ' \ │ ¡ ¸ ┃ ⌫        ┃
+// │ º \ │ 1 | │ 2 @ │ 3 # │ 4 ~ │ 5 ½ │ 6 ¬ │ 7   │ 8   │ 9   │ 0   │ ' \ │ ¡ ¸ ┃ ⌫        ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
 // ┃        ┃ Q µ │ W Ə │ E ¢ │ R ® │ T Þ │ Y — │ U ↑ │ I – │ O Œ │ P   ̛│ ^ ˇ │ * ¯ ┃       ┃
 // ┃ Tab ↹  ┃ q @ │ w ə │ e € │ r ¶ │ t þ │ y ← │ u ↓ │ i → │ o œ │ p   ̉│ ` [ │ + ] ┃       ┃
@@ -244,13 +241,15 @@ xkb_symbols "olpc2" {
 // ┃       ┃       ┃       ┃ ␣       Espacio fijo angosto ⍽ ┃       ┃       ┃       ┃       ┃
 // ┃ Ctrl  ┃ Super ┃ Alt   ┃ ␣ Espacio       Espacio fijo ⍽ ┃ AltGr ┃ Super ┃ Menu  ┃ Ctrl  ┃
 // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
+// 
+//Incluir Ĳ, Ʒ, §, ¼, ¾, ‰, ∞, reordenar acentos
 partial alphanumeric_keys
 xkb_symbols "telu" {
     include "es(deadtilde)"
     name[Group1]= "Spanish (TELU)";
     
     // First row
-    key <TLDE>	{ [ masculine, ordfeminine,    backslash      ]	}; // º ª \*
+    key <TLDE>	{ [ masculine, ordfeminine,    backslash      ]	}; // º ª \
     key <AE01>	{ [         1,     exclam,          bar       ]	}; // 1 ! |
     key <AE02>	{ [         2,   quotedbl,           at,    oneeighth ]	}; // 2 " @ ⅛
     key <AE03>	{ [      3, periodcentered, numbersign, dead_currency ]	}; // 3 · # ¤
@@ -285,7 +284,7 @@ xkb_symbols "telu" {
     key <AC04>	{ [         f,          F,     NoSymbol,  ordfeminine ]	}; // f F  ª
     key <AC05>	{ [         g,          G,          eng,          ENG ]	}; // g G ŋ Ŋ
     key <AC06>	{ [         h,          H                     ]	}; // h H
-    key <AC07>	{ [         j,          J,           ij,           IJ ]	}; // j J ĳ Ĳ ̛
+    key <AC07>	{ [         j,          J,        U0133,        U0132 ]	}; // j J ĳ Ĳ ̛
     key <AC08>	{ [         k,          K,          kra       ]	}; // k K ĸ
     key <AC09>	{ [         l,          L              ]	}; // l L /
     key <AC10>	{ [  ntilde,   Ntilde,  dead_stroke, dead_doubleacute ]	}; // ñ Ñ / ˝
