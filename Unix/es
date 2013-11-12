@@ -227,38 +227,22 @@ xkb_symbols "olpc2" {
 // └────┘
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
 // │ ª   │ !   │ " ⅛ │ · ¤ │ $   │ % ⅜ │ & ⅝ │ / ⅞ │ ( ™ │ ) ± │ = ° │ ?   │ ¿ ˛ ┃          ┃
-// │ º \ │ 1 | │ 2 @ │ 3 # │ 4 ~ │ 5 ½ │ 6 ¬ │ 7   │ 8   │ 9   │ 0   │ ' \ │ ¡ ¸ ┃ ⌫        ┃
+// │ º \ │ 1 | │ 2 @ │ 3 # │ 4 ~ │ 5 ½ │ 6 ¬ │ 7 ¼ │ 8 ¾ │ 9 § │ 0   │ ' \ │ ¡ ¸ ┃ ⌫        ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Q µ │ W Ə │ E ¢ │ R ® │ T Þ │ Y — │ U ↑ │ I – │ O Œ │ P   ̛│ ^ ˇ │ * ¯ ┃       ┃
-// ┃ Tab ↹  ┃ q @ │ w ə │ e € │ r ¶ │ t þ │ y ← │ u ↓ │ i → │ o œ │ p   ̉│ ` [ │ + ] ┃       ┃
+// ┃        ┃ Q µ │ W Ə │ E ¢ │ R ® │ T Þ │ Y — │ U ↑ │ I – │ O Œ │ P ◌̛ │ ^ ˇ │ * ¯ ┃       ┃
+// ┃ Tab ↹  ┃ q @ │ w ə │ e € │ r ¶ │ t þ │ y ← │ u ↓ │ i → │ o œ │ p ◌̉ │ ` [ │ + ] ┃       ┃
 // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
-// ┃ Bloq.   ┃ A Æ │ S ſ │ D Ð │ F ª │ G Ŋ │ H   │ J Ĳ │ K   │ L   │ Ñ ˝ │ ¨ ° │ Ç ˘ ┃      ┃
+// ┃ Bloq.   ┃ A Æ │ S ſ │ D Ð │ F ª │ G Ŋ │ H   │ J Ĳ │ K   │ L   │ Ñ ˝ │ ¨ ˚ │ Ç ˘ ┃      ┃
 // ┃ Mayús.⇬ ┃ a æ │ s ß │ d ð │ f   │ g ŋ │ h   │ j ĳ │ k ĸ │ l   │ ñ / │ ´ { │ ç } ┃      ┃
 // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
 // ┃ May. ┃ > ¦ │ Z   │ X   │ C © │ V ‘ │ B ’ │ N ‚ │ M º │ ; × │ : ÷ │ _ ˙ ┃               ┃
-// ┃ ⇧    ┃ < | │ z « │ x » │ c ¢ │ v “ │ b ” │ n „ │ m µ │ , , │ .   │ -  ̣ ┃ ⇧ Mayúsculas  ┃
+// ┃ ⇧    ┃ < | │ z « │ x » │ c ¢ │ v “ │ b ” │ n „ │ m µ │ , , │ .   │ - ◌̣ ┃ ⇧ Mayúsculas  ┃
 // ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
 // ┃       ┃       ┃       ┃ ␣       Espacio fijo angosto ⍽ ┃       ┃       ┃       ┃       ┃
 // ┃ Ctrl  ┃ Super ┃ Alt   ┃ ␣ Espacio       Espacio fijo ⍽ ┃ AltGr ┃ Super ┃ Menu  ┃ Ctrl  ┃
 // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 // 
-//Incluir Ĳ, Ʒ, §, ¼, ¾, ‰, ∞, reordenar acentos URGENTE
-// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ # ¶ │ 1 „ │ 2 “ │ 3 ” │ 4 ≤ │ 5 ≥ │ 6   │ 7 ¬ │ 8 ¼ │ 9 ½ │ 0 ¾ │ ° ′ │ ` ″ ┃ ⌫ Retour┃
-// │ $ – │ " — │ « < │ » > │ ( [ │ ) ] │ @ ^ │ + ± │ - − │ / ÷ │ * × │ = ≠ │ % ‰ ┃  arrière┃
-// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-// ┃       ┃ B ¦ │ É ˝ │ P § │ O Œ │ È ` │ !   │ V   │ D Ð │ L   │ J Ĳ │ Z Ə │ W   ┃Entrée ┃
-// ┃Tab ↹  ┃ b | │ é ˊ │ p & │ o œ │ è ` │ ˆ ¡ │ v ˇ │ d ð │ l / │ j ĳ │ z ə │ w ̆ ┃   ⏎   ┃
-// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
-// ┃        ┃ A Æ │ U Ù │ I ˙ │ E ¤ │ ; ̛ │ C ſ │ T Þ │ S ẞ │ R ™ │ N   │ M º │ Ç , ┃      ┃
-// ┃Maj ⇬   ┃ a æ │ u ù │ i ̈ │ e € │ , ’ │ c © │ t þ │ s ß │ r ® │ n ˜ │ m ¯ │ ç ¸ ┃      ┃
-// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-// ┃       ┃ Ê   │ À   │ Y ‘ │ X ’ │ : · │ K   │ ? ̉ │ Q ̣ │ G   │ H ‡ │ F ª ┃             ┃
-// ┃Shift ⇧┃ ê / │ à \ │ y { │ x } │ . … │ k ~ │ ' ¿ │ q ˚ │ g µ │ h † │ f ˛ ┃Shift ⇧      ┃
-// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
-// ┃       ┃       ┃       ┃ Espace inséc.   Espace inséc. fin ┃       ┃       ┃       ┃
-// ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣ (Espace)      _               ␣ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
-// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+//Incluir Ʒ, ‰, ∞, reordenar acentos
 partial alphanumeric_keys
 xkb_symbols "telu" {
     include "es(deadtilde)"
@@ -272,10 +256,10 @@ xkb_symbols "telu" {
     key <AE04>	{ [         4,     dollar,   dead_tilde        ]	}; // 4 $ ~ $
     key <AE05>	{ [         5,    percent,      onehalf, threeeighths ]	}; // 5 % ½ ⅜
     key <AE06>	{ [         6,  ampersand,      notsign,  fiveeighths ]	}; // 6 & ¬ ⅝
-    key <AE07>	{ [         7,      slash,    NoSymbol, seveneighths ]	}; // 7 /  ⅞
-    key <AE08>	{ [         8,  parenleft,  NoSymbol,    trademark ]	}; // 8 (  ™
-    key <AE09>	{ [         9, parenright, NoSymbol,    plusminus ]	}; // 9 )  ±
-    key <AE10>	{ [         0,      equal,   NoSymbol,       degree ]	}; // 0 =  °
+    key <AE07>	{ [         7,      slash,    onefourth, seveneighths ]	}; // 7 / ¼ ⅞
+    key <AE08>	{ [         8,  parenleft, threefourths,    trademark ]	}; // 8 ( ¾ ™
+    key <AE09>	{ [         9, parenright,      section,    plusminus ]	}; // 9 ) § ±
+    key <AE10>	{ [         0, equal, NoSymbol, degree ]	}; // 0 =   °
     key <AE11>	{ [apostrophe,   question,    backslash       ]	}; // ' ? \
     key <AE12>	{ [exclamdown, questiondown, dead_cedilla, dead_ogonek]	}; // ¿ ¡ ¸ ˛
 
@@ -289,7 +273,7 @@ xkb_symbols "telu" {
     key <AD07>	{ [         u,          U,    downarrow,      uparrow ]	}; // u U ↓ ↑
     key <AD08>	{ [         i,          I,   rightarrow,       endash ]	}; // i I → –
     key <AD09>	{ [         o,          O,           oe,           OE ]	}; // o O œ Œ
-    key <AD10>	{ [         p,          P,    dead_hook,    dead_horn ]	}; // p P  ̉  ̛
+    key <AD10>	{ [         p,          P,    dead_hook,    dead_horn ]	}; // p P ◌̉ ◌̛
     key <AD11>	{ [dead_grave, dead_circumflex, bracketleft, dead_caron ] }; // ` ^ [ ˇ
     key <AD12>	{ [      plus,   asterisk, bracketright,  dead_macron ]	}; // + * ] ¯
 
@@ -297,14 +281,14 @@ xkb_symbols "telu" {
     key <AC01>	{ [         a,          A,           ae,           AE ]	}; // a A æ Æ
     key <AC02>	{ [         s,          S,       ssharp,        U017F ]	}; // s S ß ſ
     key <AC03>	{ [         d,          D,          eth,          ETH ]	}; // d D ð Ð
-    key <AC04>	{ [         f,          F,     NoSymbol,  ordfeminine ]	}; // f F  ª
+    key <AC04>	{ [         f,          F,     NoSymbol,  ordfeminine ]	}; // f F   ª
     key <AC05>	{ [         g,          G,          eng,          ENG ]	}; // g G ŋ Ŋ
     key <AC06>	{ [         h,          H                     ]	}; // h H
-    key <AC07>	{ [         j,          J,        U0133,        U0132 ]	}; // j J ĳ Ĳ ̛
+    key <AC07>	{ [         j,          J,        U0133,        U0132 ]	}; // j J ĳ Ĳ
     key <AC08>	{ [         k,          K,          kra       ]	}; // k K ĸ
     key <AC09>	{ [         l,          L              ]	}; // l L /
     key <AC10>	{ [  ntilde,   Ntilde,  dead_stroke, dead_doubleacute ]	}; // ñ Ñ / ˝
-    key <AC11>	{ [dead_acute, dead_diaeresis, braceleft, dead_abovering ] }; // ´ ¨ { °
+    key <AC11>	{ [dead_acute, dead_diaeresis, braceleft, dead_abovering ] }; // ´ ¨ { ˚
     key <BKSL>	{ [  ccedilla,   Ccedilla,   braceright,   dead_breve ]	}; // ç Ç } ˘
 
     // Fourth row
@@ -318,7 +302,7 @@ xkb_symbols "telu" {
     key <AB07>	{ [         m,          M,           mu,    masculine ]	}; // m M µ º
     key <AB08>	{ [     comma,  semicolon, dead_belowcomma,  multiply ]	}; // , ; , ×
     key <AB09>	{ [    period,      colon,     NoSymbol,     division ]	}; // . :   ÷
-    key <AB10>	{ [   minus, underscore, dead_belowdot, dead_abovedot ]	}; // - _  ̣ ˙
+    key <AB10>	{ [   minus, underscore, dead_belowdot, dead_abovedot ]	}; // - _ ◌̣ ˙
 
     key <SPCE>	{ [     space, space, nobreakspace, U202F ] }; // ␣ ␣ (espacio fijo) (espacio fijo angosto)
 
